@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import { Footer, Navbar, Sidebar, ThemeSettings } from './components';
-import { Customers, Ecommerce } from './pages';
+import { Transactions, Home } from './pages';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -65,15 +65,11 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/" element={(<Home />)} />
+                <Route path="/home" element={(<Home />)} />
 
                 {/* pages  */}
-                <Route exact path="/transactions" element={<Customers />} />
-              {/* <Route path="/transactions/add" element={<Employees />} /> */}
-             
-
-
+                <Route exact path="/transactions" element={<Transactions />} />
               </Routes>
             </div>
             <Footer />

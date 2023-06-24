@@ -17,7 +17,7 @@ import { Header } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 
 
-const Customers = () => {
+const Transactions = () => {
   const {transaction,handleSubmit} = useStateContext()
   const editOptions = {
     allowEditing: true,
@@ -62,4 +62,4 @@ const Customers = () => {
   );
 };
 
-export default Customers;
+export default Transactions;
